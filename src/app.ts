@@ -1,12 +1,12 @@
 import express from "express"
 import dotenv from "dotenv";
-import logRoutes from "./src/logRoute"
+import route  from "./routes/logRoute.js"
 
 dotenv.config();
 
 const app = express()
 app.use(express.json())
 
-app.use("/logs", logRoutes);
+app.use("/logs", route);
 
 export default app;

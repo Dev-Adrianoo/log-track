@@ -1,3 +1,5 @@
-import routes from "express"
+import { Router }  from "express";
 
-export const route = routes()
+const routes = Router()
+
+export default routes;
